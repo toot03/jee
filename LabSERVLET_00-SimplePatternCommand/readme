@@ -1,0 +1,14 @@
+Simple Command
+
+Exactly the same as SimpleMVC except the controller actions have been factored out to separate classes. 
+This is a simple implementation of the "Command" or "Action" pattern.
+Using this pattern allows you to process all of your web actions from one controller servlet; 
+eliminating the need for redundant code and long deployment descriptors. 
+
+There are several variations of this pattern. With this one, the request and command objects are passed to the command object. 
+The proper command object is determined by examining the form parameter "form_action". 
+
+The commands are instanciated and loaded into the map from the servlet's init method. 
+In this case the command's name and class are hardcoded right in the servlet's java file. 
+Most frameworks factor this out to a separate config file which allows you to add commands 
+without needing to change and recompile the controller servlet. 
