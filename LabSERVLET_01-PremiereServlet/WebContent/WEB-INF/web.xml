@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>Cool servlet</display-name>
+  <description>Description de Cool servlet</description>
+  <welcome-file-list>
+    <welcome-file>CoolServlet.html</welcome-file>
+  </welcome-file-list>
+  
+  <!-- La balise servlet decrit le nom de la servlet et la classe
+	java Servlet qui lui est associee
+	Declare une servlet Servlet1 associee à la classe pack1.CoolServlet1 -->
+	
+  <servlet>
+    <servlet-name>CoolServlet1</servlet-name>
+    <servlet-class>pack1.CoolServlet1</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  	<!-- Le mapping d'une servlet sert à indiquer au serveur quelle servlet charger 
+	pour telle requête du client (telle URL demandée). 
+	Rappelons que les URL des servlets sont relatives à l'URL du Context (la webapp) 
+	auquel elles appartiennent.
+	Effectuer un mapping se déroule au sein d'une balise servlet-mapping. 
+	Il faut spécifier le nom de la servlet à mapper (balise servlet-name). 
+	Ce nom doit correspondre à un nom de servlet défini dans la déclaration des servlets 
+	Puis, dans la balise url-pattern, définir l'URL par laquelle cette servlet est accessible.
+	Il s'agit bien d'une pattern, car il est possible d'utiliser des caractères spéciaux. 
+	L'instruction <url-pattern>/test/*</url-pattern> est ainsi tout à fait valable, 
+	et appelera la servlet mappée dès que l'URL contiendra la séquence "/test/" 
+	(n'importe quelle URL commençant par "/test/").	
+	Pour acceder a cette servlet il faut taper dans le navigateur
+	http://monURL/monProjet/Servlet1 (en local monURL = localhost:8080) -->
+	
+  <servlet-mapping>
+    <servlet-name>CoolServlet1</servlet-name>
+    <url-pattern>/Servlet1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CoolServlet2</servlet-name>
+    <servlet-class>pack1.CoolServlet2</servlet-class>
+  </servlet>
+    
+  <servlet-mapping>
+    <servlet-name>CoolServlet2</servlet-name>
+    <url-pattern>/Servlet2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CoolServlet4</servlet-name>
+    <servlet-class>pack1.CoolServlet4</servlet-class>
+    <init-param>
+      <param-name>param1</param-name>
+      <param-value>value1</param-value>
+    </init-param>
+  </servlet>
+    
+  <servlet-mapping>
+    <servlet-name>CoolServlet4</servlet-name>
+    <url-pattern>/Servlet4</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+    <param-name>applicationName</param-name>
+    <param-value>MonAppli</param-value>
+  </context-param>
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+</web-app>
