@@ -1,0 +1,133 @@
+html,body{
+	margin:0px;
+	padding: 0px;
+	background-color: white;
+	width:100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:13px;
+}
+
+.centrer {
+	margin : auto; /* Pour centrer sur la page width doit etre déclaré */
+	width:600px;
+}
+#conteneur{
+	border: 1px solid #04964b;
+}
+
+#titre{
+	margin:0px;
+	padding:0px;
+	margin-bottom:15px;
+	padding-bottom:5px;
+	border: 1px solid #04964b; 
+	padding-left:15px;
+	width:400px;
+}
+
+#titre img{
+	margin:0px;
+	padding-top:2px;
+}
+
+/* Transformation de la <div> en <table>, des <p> en <tr> et des <span> en <td>. */
+.formTable{
+	display:table; 
+	/* Joindre les bords des cellules */
+	/* border-collapse:collapse; */
+	width:600px;
+	color: #626262;
+	padding:0px;
+
+}
+
+.formTable p{ 
+    display:table-row; 
+	width:100%;
+}
+
+.formLeft {
+	display:table-cell; 
+	text-align:left;
+	padding-left:15px;
+	margin:0px;
+	width:30%;
+}
+
+.formRight{
+	padding:0;
+	display:table-cell; 
+	text-align:left;
+	padding-top:2px;
+	padding-bottom:2px;
+	width:65%;
+}
+
+.formRequired {
+	display:table-cell; 
+	width:5%;
+	text-align:right;
+	margin:0px;
+}
+
+.formRequired  img{
+	padding:0px;
+	padding-right:22px;
+}
+
+.formCenter {
+	text-align:center;
+}
+
+#form_offre{
+	padding:0px;
+	margin:0px;
+}
+
+.soustitre{
+	text-align:left;
+	padding-left:15px;
+	padding-bottom:15px;
+	margin:0px;
+	font-weight:bold;
+	width:100%; 
+}
+
+.input{
+	height:16px;
+	width:180px;
+	border: 1px solid #04964b;
+	padding-top:1px;
+}
+
+hr {
+
+	margin-left:14px; 
+	margin-right:14px; 
+	
+}
+
+select{
+	height:auto;
+	width:185px;
+	border: 1px solid #04964b;
+	padding-top:1px;
+}
+
+.large{
+	height:auto;
+	width:185px;
+	border: 1px solid #04964b;
+	padding-top:1px;
+}
+
+span img{
+	padding-right:3px;
+	padding-left:6px;
+	padding-top:15px;
+}
+
+.vert{
+	color: green;
+	/* letter-spacing:1px; */
+}

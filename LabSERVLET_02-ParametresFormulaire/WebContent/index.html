@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Formulaire</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css" />
+</head>
+
+<body>
+<div id="page" >
+<form id="monForm" action="ServletFormPost" method="post">
+    <fieldset>
+        <legend>Informations personnelles</legend>
+        <p>
+            <label for="form_firstname">Prénom : </label>
+            <input type="text" id="form_firstname" name="firstname"/>
+        </p>
+        <p>
+            <label for="form_lastname">Nom : </label>
+            <input type="text" id="form_lastname" name="lastname" />
+        </p>
+        <p>
+            <label for="form_gender">Genre : </label>
+			<select id="form_gender" name="genre">
+				 <option value="">Sélectionnez le genre</option>
+                 <option value="ma">Masculin</option>
+                 <option value="fe">Féminin</option>
+		  </select>
+        </p>       
+         <p>
+            <label for="form_preference">Préférences : </label>
+				<input type="checkbox" name="preference" value="Pref1" />Préférence1
+				<input type="checkbox" name="preference" value="Pref2" checked="checked" />Préférence2
+				<input type="checkbox" name="preference" value="Pref3" />Préférence3
+        </p>
+        <p>
+            <label for="form_birthday">Date de naissance : </label>
+            <input type="text" id="form_birthday" class="form_input_day_month" name="day"  maxlength="2" /> /
+            <input type="text" class="form_input_day_month" name="month" maxlength="2" /> /
+            <input type="text" class="form_input_year" name="year" maxlength="4" />
+        </p>
+        <p>
+            <label for="form_address">Adresse : </label>
+            <input type="text" id="form_address" name="address" />
+        </p>
+        <p>
+            <label for="form_postal_code">Code postal : </label>
+            <input type="text" id="form_postal_code" name="postal_code" />
+        </p>
+        <p>
+            <label for="form_city">Ville : </label>
+            <input type="text" id="form_city" name="city" />
+        </p>
+        <p>
+            <label for="form_country">Pays : </label>
+            <select id="form_country" name="country">
+				<option value="">SÃ©lectionnez le pays</option>
+                <optgroup label="Amérique">
+                    <option value="ca">Canada</option>
+                    <option value="us">Etats-Unis</option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <option value="be">Belgique</option>
+                    <option value="fr">France</option>
+                </optgroup>
+				<optgroup label="Asie">
+                    <option value="ch">Chine</option>
+                    <option value="ja">Japon</option>
+                </optgroup>
+            </select>
+        </p>
+    </fieldset>
+    
+    <fieldset>
+    <legend>Compte utilisateur</legend>
+        <p>
+            <label for="form_login">Identifiant : </label>
+            <input type="text" id="form_login" name="login" />
+        </p>
+        <p>
+            <label for="form_password">Mot de passe : </label>
+            <input type="password" id="form_password" name="password" />
+        </p>
+        <p>
+            <label for="form_password2">Confirmer le mot de passe : </label>
+            <input type="password" id="form_password2" name="password2" />
+        </p>
+        <p>
+            <label for="form_mail">Adresse email : </label>
+            <input type="text" id="form_mail" name="mail" />
+        </p>
+    </fieldset>
+     <div class="left"><input type="submit" name="Soumettre" />
+     <input type="reset" name="Effacer" />
+     </div>
+</form>
+</div>
+</body>
+</html>
+
