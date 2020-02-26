@@ -1,0 +1,29 @@
+<taglib>
+   <tlib-version>1.0</tlib-version>
+   <jsp-version>2.0</jsp-version>
+   <short-name>Example TLD with Body</short-name>
+   
+   <tag>
+      <name>HelloWithAttribute</name>
+      <tag-class>tags.HelloWithAttribute</tag-class>
+      
+      <!-- You must declare the body content of tags that do not accept 
+      a body as empty. For tags that have a body there are two options. 
+      Body content containing custom and standard tags and HTML text 
+      is specified as scriptless -->
+      <body-content>scriptless</body-content>
+      
+      <attribute>
+      	<!-- The name element defines the name of an attribute. 
+      		Each attribute name must be unique for a particular tag. -->
+         <name>message</name>
+         <!-- This specifies if this attribute is required or is an optional one. 
+         It would be false for optional. -->
+         <required>false</required>
+         <!--  Defines the Java class-type of this attribute. 
+         By default it is assumed as String  -->
+         <type>java.util.String</type>
+      </attribute>
+   
+   </tag>
+</taglib>
