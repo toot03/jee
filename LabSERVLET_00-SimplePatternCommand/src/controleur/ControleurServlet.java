@@ -37,7 +37,8 @@ public class ControleurServlet extends HttpServlet{
         // Récupérer la commande dans la table des commandes
         ICommand command = (ICommand)commands.get(formAction);
 
-        // SI il n'existe pas de commande correspondante dans la table des commandes
+        // SI il n'existe pas de commande correspondante dans 
+        //la table des commandes
         if(command == null){
         	// Lever une exception
             throw new IllegalArgumentException(
