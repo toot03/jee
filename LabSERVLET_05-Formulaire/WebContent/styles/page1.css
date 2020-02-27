@@ -1,0 +1,29 @@
+#centrage{
+   	margin-top:-90px; /*La moitié de la hauteur du bloc */
+}
+
+#loginHead {
+	font-weight: bold;		/* texte Merci de ....  en vert */
+	color: #FC0;	/* Couleur verte */
+	background: url("../images/email_head.gif") no-repeat;
+	/* Largeur de l'image */
+	width:416px; 
+	/* Hauteur de l'image */
+	height: 51px;
+}
+
+/* <div id="formTable"> */
+#formTable {
+	margin: 0px;
+	padding: 0px;
+	/* text-align ok uniquement si element type bloc */
+	text-align: center;
+	border: solid 1px #0A0;
+	border-top: none; /* pas de ligne en haut car image */
+	width:414px; /* Taille de l'image - 2 pixel */
+}
+
+.formRight input {
+	border: solid 1px #0A0;
+	margin-top: 0px;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+		<meta charset="utf-8">
+		<title>Formulaire de demande d'un identifiant</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css" />
+		<link rel="stylesheet" type="text/css" href="styles/page2.css" />
+</head>
+	
+<body>
+	<div id="centrage">
+	<form method="post" name="loginForm" action="ServletCreerIdentifiant">
+		<div id="loginHead" >
+				<span>Obtenir un identifiant...</span>
+		</div>
+			
+		<div id="formTable">				
+			<span>
+				Renseignez les champs ci-dessous et cliquez sur valider.<br />
+				Après vérification, un courriel vous sera envoyé avec votre identifiant et votre mot de passe.
+			</span>
+		<div>
+		<p>
+						<span class="formLeft">
+							<label for="form_genre">Genre :</label>
+						</span>
+						<span class="formRight">
+							<select id="form_genre" name="genre">
+								 <option>Sélectionnez le genre</option>
+				                 <option value="ma">Masculin</option>
+				                 <option value="fe">Féminin</option>
+							</select>
+						</span>
+						<span class="formRequired">
+							<img src="images/required.gif" />
+						</span>
+		</p>
+					
+		<p>
+						<span class="formLeft">Nom :</span>
+						<span class="formRight">
+							<input type="text" name="nom" class="input" maxlength="50" />
+						</span>
+						<span class="formRequired">
+							<img src="images/required.gif" />
+						</span>
+		</p>
+					
+		<p>
+						<span class="formLeft">Prénom :</span>
+						<span class="formRight">
+							<input type="text" name="prenom" class="input" maxlength="50" />
+						</span>
+						<span class="formRequired">
+							<img src="images/required.gif" />
+						</span>
+		</p>
+					
+					<p>
+						<span class="formLeft"><label for="form_fonc">Fonction : </label></span>
+						<span class="formRight">
+							<select id="form_fonc" name="fonction">
+								<option>Sélectionnez la fonction</option>
+						        <option value="an">Animateur</option>
+						        <option value="fo">Formateur</option>
+								<option value="st">Stagiaire</option>
+							</select>
+						</span>
+						<span class="formRequired">
+							<img src="images/required.gif" />
+						</span>
+					</p>
+					
+					<p>
+						<span class="formLeft">
+							<label for="form_centre">Centre AFPA : </label>
+						</span>
+						<span class="formRight">
+							<select id="form_centre" name="centre" >
+								 <option>Sélectionnez votre centre...</option>
+				                 <option value="ma">Balma</option>
+				                 <option value="fe">Rodez</option>
+								 <option value="fe">Albi</option>
+								 <option value="fe">Tarbes</option>
+							</select>
+						</span>
+						<span class="formRequired">
+							<img src="images/required.gif" />
+						</span>
+					</p>
+						
+					<p>
+						<span class="formLeft">Téléphone :</span>
+						<span class="formRight">
+							<input type="text" name="telephone" class="input" maxlength="50" />
+						</span>
+						<span class="formRequired"><img src="images/required.gif" /></span>
+					</p>
+					
+					<p>
+						<span class="formLeft">Préférences :</span>
+						<span class="formRightCheck">
+						<input type="checkbox" id="musique" name="preference" value="mus" /><label for="musique">musique</label>
+						<input type="checkbox" id="cinema" name="preference" value="cin" /><label for="cinema">cinéma</label>
+						</span>
+					</p>
+										
+					<span>
+							<img src="images/required.gif" />Champ obligatoire
+							<img src="images/info.png" />Infos complémentaires
+					</span>
+					</div>		
+				<p>
+					<span>
+						<input type="submit" value="Valider" />
+					</span>
+				</p>
+				
+			</div>
+		</form>
+		</div>
+	</body>
+</html>

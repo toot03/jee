@@ -1,0 +1,19 @@
+body {
+	margin: auto;
+	font-family: arial;
+	font-size: 12px;
+	color: #888;
+}
+
+/* Les liens en vert */
+a {
+	color: #0A0;
+}
+
+/* Centrer par rapport à la page */
+#centrage{
+ 	position:absolute;
+   	top:50%;
+   	left:50%;
+   	margin-left:-213px; /*la moitié de la largeur de l'image */ 
+}

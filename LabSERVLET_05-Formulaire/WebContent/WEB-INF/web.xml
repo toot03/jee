@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+  xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0">
+  
+  <display-name>ServletSession</display-name>
+  <description>ServletSession</description>
+  
+  <welcome-file-list>
+    <welcome-file>login.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>ServletLogin</servlet-name>
+    <servlet-class>pack1.ServletLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletLogin</servlet-name>
+    <url-pattern>/ServletLogin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ServletAfficherAttributsSession</servlet-name>
+    <servlet-class>pack1.ServletAfficherAttributsSession</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletAfficherAttributsSession</servlet-name>
+    <url-pattern>/ServletAfficherAttributsSession</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ServletCreerIdentifiant</servlet-name>
+    <servlet-class>pack1.ServletCreerIdentifiant</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletCreerIdentifiant</servlet-name>
+    <url-pattern>/ServletCreerIdentifiant</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>ServletObtenirIdentifiant</servlet-name>
+    <servlet-class>pack1.ServletObtenirIdentifiant</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletObtenirIdentifiant</servlet-name>
+    <url-pattern>/ServletObtenirIdentifiant</url-pattern>
+  </servlet-mapping>
+</web-app>

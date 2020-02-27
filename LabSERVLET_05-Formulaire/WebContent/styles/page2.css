@@ -1,0 +1,58 @@
+#centrage{
+   	margin-top:-190px; /*La moitié de la hauteur du bloc */
+}
+
+#loginHead {
+	font-weight: bold;		/* texte Merci de ....  en vert */
+	color: #FC0;	/* Couleur verte */
+	background: url("../images/password_rem_head.gif") no-repeat;
+	/* Largeur de l'image */
+	width:416px; 
+	/* Hauteur de l'image */
+	height: 51px;
+}
+
+/* <div id="formTable"> */
+#formTable {
+	margin: 0px;
+	padding: 0px;
+	/* text-align ok uniquement si element type bloc */
+	text-align: center;
+	border: solid 1px #0A0;
+	border-top: none; /* pas de ligne en haut car image */
+	width:414px; /* Taille de l'image - 2 pixel */
+}
+
+#formTable div p {
+	text-align: right;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.formRight input {
+	border: solid 1px #0A0;
+	width: 200px;
+	margin-top: 10px;
+	margin-right: 60px;
+}
+
+.formRight select {
+	border: solid 1px #0A0;
+	width: 222px;
+	margin-top: 10px;
+	margin-right: 40px;
+}
+
+.formRightCheck {
+	width: 222px;
+	margin-top: 10px;
+	margin-right: 167px;
+}
+
+.formRequired {
+	margin-right: 10px;
+}
+
+span img {
+	margin-right: 3px;			
+}

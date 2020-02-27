@@ -1,0 +1,32 @@
+#centrage{
+   	margin-top:-110px; /*La moitié de la hauteur du bloc */
+}
+
+#loginHead {
+	font-weight: bold;		/* texte Merci de ....  en vert */
+	color: #FC0;	/* Couleur orange */
+	background: url("../images/login_head.gif") no-repeat;
+	/* Largeur de l'image */
+	width:416px; 
+	/* Hauteur de l'image */
+	height: 51px;
+}
+
+/* <div id="formTable"> */
+#formTable {
+	/* text-align ok uniquement si element type bloc */
+	text-align: center; /* Pour centrer bouton et texte dans le conteneur */
+	border: solid 1px #0A0; /* Bords de couleur verte */
+	border-top: none; /* pas de ligne en haut car image */
+}
+
+#formTable div p {
+	text-align: right; /* Aligner les paragraphes à droite */
+	margin: 0px;	/* Supprimer toutes les marges */
+	margin-right: 85px; /* Décaler vers la gauche pour centrer */
+}
+
+.formRight input {
+	border: solid 1px #0A0;	/* Cadre vert autour des input */
+	margin-top: 10px;			/* Espace entre les input */
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Formulaire de demande d'authentification</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css" />
+	<link rel="stylesheet" type="text/css" href="styles/page1.css" />
+</head>
+		
+<body>
+	<div id="centrage">
+		<form method="post" name="loginForm" action="ServletObtenirIdentifiant">
+			<div id="loginHead" >
+				<span>Obtenir mon identifiant et mon mot de passe...</span>
+			</div>
+				
+			<div id="formTable">
+					
+				<span class="formCenter">Entrez votre adresse mail et cliquez sur valider.<br/>
+						Après vérification, votre identifiant et mot de passe vous seront envoyés à cette adresse.
+				</span>
+				
+				<p>
+					<span class="formLeft">Courriel :</span>
+					<span class="formRight"><input type="text" name="courriel" class="input" maxlength="50" /></span>
+				</p>
+					
+				<p>
+					<span class="formCenter"><input type="submit" value="Valider" /></span>
+				</p>
+		
+			</div>
+		</form>
+	</div>
+</body>
+</html>

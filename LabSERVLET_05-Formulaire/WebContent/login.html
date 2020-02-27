@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Formulaire d'authentification</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css" />
+	<link rel="stylesheet" type="text/css" href="styles/login.css" />
+</head>
+
+<body>
+	<div id="centrage">
+		<form method="post" name="loginForm" action="ServletLogin" >
+			<div id="loginHead">
+				<span>Merci de vous connecter ci-dessous...</span>
+			</div>
+			<div id="formTable">
+				<div>
+					<p>
+						<span class="formLeft">Identifiant :</span>
+						<span class="formRight">
+							<input type="text" name="identifiant" class="input" maxlength="50" />
+						</span>
+					</p>
+					<p>
+						<span class="formLeft">Mot de passe :</span>
+						<span class="formRight">
+							<input type="password" name="motdepasse" class="input" maxlength="50" />
+						</span>
+					</p>
+				</div>
+					
+				<p>
+					<span>
+						Si vous avez oublié votre identifiant ou/et votre mot de passe, 
+						<a href="pageObtenirIdentifiant.html" >cliquez ici</a>
+					</span>
+				</p>
+						
+				<p>
+					<span>
+						Si vous n'avez pas d'identifiant, 
+						<a href="pageCreerIdentifiant.html" >
+							cliquez ici
+						</a>
+					</span>
+				</p>
+					
+				<p>
+					<span>
+						<input type="submit" value="Valider" />
+					</span>
+				</p>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
